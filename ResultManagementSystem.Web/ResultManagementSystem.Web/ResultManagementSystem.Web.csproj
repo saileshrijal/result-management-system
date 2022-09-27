@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.9" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
@@ -16,6 +18,12 @@
     <Folder Include="Areas\Data\" />
     <Folder Include="Areas\Models\" />
     <Folder Include="Areas\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RMS.Common\RMS.Common.csproj" />
+    <ProjectReference Include="..\RMS.Context\RMS.Context.csproj" />
+    <ProjectReference Include="..\RMS.Modules.Core\RMS.Modules.Core.csproj" />
   </ItemGroup>
 
 </Project>
